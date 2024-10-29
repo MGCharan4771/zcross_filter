@@ -1,0 +1,26 @@
+<mvc:View controllerName="zcrossfilter.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table items="{MaterialModel>/aMaterials}" >
+                <columns>
+                    <Column >
+                        <Text text="Material Number"></Text>
+                    </Column>
+                    <Column >
+                        <Text text="Material Description"></Text>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{MaterialModel>Mat_No}"></Text>
+                            <Text text="{MaterialModel>Mat_Des}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
